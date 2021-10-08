@@ -7,7 +7,7 @@ import DishDetail from "./DishDetailComponent";
 function RenderMenuItem( {dish , onClick} ) {
     
     return (
-            <Card>
+            <Card onClick = { <DishDetail prop= "dish" />}>
                 <CardImg width="100%" src={dish.image} alt={dish.name} />
                 <CardImgOverlay>
                     <CardTitle>{dish.name}</CardTitle>
